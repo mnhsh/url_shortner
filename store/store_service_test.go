@@ -5,14 +5,14 @@ import (
 	"testing"
 )
 
-var testStoreService = &StoreService{}
+var testStoreService = &StorageService{}
 
 func init() {
 	testStoreService = InitializeStore()
 }
 
 func TestStoreInit(t *testing.T) {
-	assert.True(t, testStoreService.redis != nil)
+	assert.True(t, testStoreService.redisClient != nil)
 }
 
 func TestInsertionAndRetrieval(t *testing.T) {
