@@ -1,4 +1,4 @@
-module github.com/mnhsh/url-shortener
+module github.com/mnhsh/url_short
 
 go 1.25.3
 
